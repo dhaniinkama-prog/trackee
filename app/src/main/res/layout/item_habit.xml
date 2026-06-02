@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F8"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clipToPadding="false"
+        android:paddingBottom="40dp"> <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <ImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:background="@null"
+            android:contentDescription="Tutup"
+            android:src="@drawable/ic_close"
+            app:tint="#3D3A8C" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="TrackEe"
+            android:textColor="#3D3A8C"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium" />
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_hero_card"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tambah Kebiasaan"
+                android:textColor="#3D3A8C"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Mulai langkah kecil untuk\nperubahan besar hari ini."
+                android:textColor="#888888"
+                android:textSize="13sp"
+                android:lineSpacingExtra="2dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_form_card"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_edit"
+                    app:tint="#3D3A8C" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:text="Nama Kebiasaan"
+                    android:textColor="#3D3A8C"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_habit_name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input_field"
+                android:hint="Misal: Minum Air Putih"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:textColor="#333333"
+                android:textColorHint="#BBBBBB"
+                android:textSize="14sp"
+                android:inputType="text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_flag"
+                    app:tint="#3D3A8C" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:text="Target Harian"
+                    android:textColor="#3D3A8C"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_daily_goal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input_field"
+                android:hint="Misal: 8 Gelas"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:textColor="#333333"
+                android:textColorHint="#BBBBBB"
+                android:textSize="14sp"
+                android:inputType="text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_alarm"
+                    app:tint="#3D3A8C" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:text="Waktu Pengingat"
+                    android:textColor="#3D3A8C"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="64dp"
+                    android:layout_height="56dp"
+                    android:background="@drawable/bg_time_pill"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_hours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="07"
+                        android:textColor="#C5B4E3"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:text=":"
+                    android:textColor="#3D3A8C"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="64dp"
+                    android:layout_height="56dp"
+                    android:background="@drawable/bg_time_pill"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_minutes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30"
+                        android:textColor="#C5B4E3"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="JAM"
+                    android:textColor="#AAAAAA"
+                    android:textSize="10sp"
+                    android:letterSpacing="0.1" />
+
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="1dp" />
+
+                <TextView
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="MENIT"
+                    android:textColor="#AAAAAA"
+                    android:textSize="10sp"
+                    android:letterSpacing="0.1" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_change_reminder"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#C5B4E3"
+                android:text="Ubah Waktu Pengingat"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-medium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_alarm"
+                    app:tint="#3D3A8C" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:text="Suara Ringtone Alarm"
+                    android:textColor="#3D3A8C"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_select_ringtone"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#C5B4E3"
+                android:text="Pilih Nada Dering"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:id="@+id/tv_ringtone_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Suara Default"
+                android:textColor="#888888"
+                android:textSize="13sp"
+                android:gravity="center_horizontal"
+                android:fontFamily="sans-serif" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_calendar"
+                    app:tint="#3D3A8C" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:text="Frekuensi Rutinitas"
+                    android:textColor="#3D3A8C"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rg_frequency_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rb_every_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Setiap Hari"
+                    android:textSize="14sp"
+                    android:textColor="#333333"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/rb_specific_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hari Tertentu (Pilih Hari)"
+                    android:textSize="14sp"
+                    android:textColor="#333333"/>
+
+                <RadioButton
+                    android:id="@+id/rb_flexible_week"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fleksibel (Berapa hari dalam seminggu)"
+                    android:textSize="14sp"
+                    android:textColor="#333333"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/layout_specific_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ToggleButton
+                    android:id="@+id/toggle_sun"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_day_toggle"
+                    android:textOn="S"
+                    android:textOff="S"
+                    android:textColor="@drawable/color_day_text"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="6dp"/>
+
+                <ToggleButton
+                    android:id="@+id/toggle_mon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_day_toggle"
+                    android:textOn="M"
+                    android:textOff="M"
+                    android:textColor="@drawable/color_day_text"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="6dp"/>
+
+                <ToggleButton
+                    android:id="@+id/toggle_tue"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_day_toggle"
+                    android:textOn="T"
+                    android:textOff="T"
+                    android:textColor="@drawable/color_day_text"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="6dp"/>
+
+                <ToggleButton
+                    android:id="@+id/toggle_wed"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_day_toggle"
+                    android:textOn="W"
+                    android:textOff="W"
+                    android:textColor="@drawable/color_day_text"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="6dp"/>
+
+                <ToggleButton
+                    android:id="@+id/toggle_thu"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_day_toggle"
+                    android:textOn="T"
+                    android:textOff="T"
+                    android:textColor="@drawable/color_day_text"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="6dp"/>
+
+                <ToggleButton
+                    android:id="@+id/toggle_fri"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_day_toggle"
+                    android:textOn="F"
+                    android:textOff="F"
+                    android:textColor="@drawable/color_day_text"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="6dp"/>
+
+                <ToggleButton
+                    android:id="@+id/toggle_sat"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_day_toggle"
+                    android:textOn="S"
+                    android:textOff="S"
+                    android:textColor="@drawable/color_day_text"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_flexible_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Target:"
+                    android:textColor="#3D3A8C"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/et_flexible_count"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/bg_input_field"
+                    android:gravity="center"
+                    android:hint="3"
+                    android:inputType="number"
+                    android:textColor="#333333"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Hari dalam seminggu"
+                    android:textColor="#666666"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_save_habit"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_button_primary"
+            android:drawableEnd="@drawable/ic_check_circle"
+            android:drawablePadding="8dp"
+            android:drawableTint="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            android:text="Simpan Kebiasaan"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="Kamu bisa mengubah ini nanti di pengaturan\nhabit."
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:lineSpacingExtra="2dp" />
+
+    </LinearLayout>
+
+</ScrollView>

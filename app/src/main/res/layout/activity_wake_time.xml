@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_default">
+
+    <!-- MATAHARI (BULATAN OREN) -->
+
+    <!-- TITLE -->
+
+    <!-- PICKER CONTAINER -->
+
+    <!-- CONTAINER PICKER (2 KOLOM) -->
+
+    <!-- WAVE BESAR (gambar laut) -->
+
+    <!-- BUTTON CONTINUE -->
+
+    <ImageView
+        android:id="@+id/sunImage"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="184dp"
+        android:src="@drawable/sun"
+        android:translationX="120dp"
+        android:translationY="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/wakeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="What time do you usually wake up?"
+        android:textColor="#000"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/waveImage"
+        android:layout_width="423dp"
+        android:layout_height="483dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <LinearLayout
+        android:id="@+id/pickerContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/buttonContinue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- HOUR PICKER -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/hourPicker"
+            android:layout_width="60dp"
+            android:layout_height="200dp"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:padding="0dp" />
+
+        <!-- SPACING ANTARA PICKER -->
+        <Space
+            android:layout_width="120dp"
+            android:layout_height="1dp" />
+
+        <!-- MINUTE PICKER -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/minutePicker"
+            android:layout_width="60dp"
+            android:layout_height="200dp"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:padding="0dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonContinue"
+        android:layout_width="296dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="84dp"
+        android:backgroundTint="#C2C9FF"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:cornerRadius="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

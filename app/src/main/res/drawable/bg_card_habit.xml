@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+
+        <gradient
+            android:startColor="#bba9ff"/>   <!-- warna atas -->
+
+
+        <corners android:radius="18dp"/>   <!-- buat bentuk rounded -->
+
+        <padding
+            android:left="12dp"
+            android:top="12dp"
+            android:right="12dp"
+            android:bottom="12dp"/>
+
+    </shape>
+
+</selector>

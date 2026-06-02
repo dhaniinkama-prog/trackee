@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardCalendar"
+    android:layout_width="55dp"
+    android:layout_height="70dp"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="#937BB7"> <LinearLayout
+    android:id="@+id/calendarContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/tvDayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MIN"
+        android:textColor="#FFFFFF" android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDayNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="24"
+        android:textColor="#FFFFFF" android:textSize="15sp"
+        android:textStyle="bold" />
+</LinearLayout>
+</androidx.cardview.widget.CardView>

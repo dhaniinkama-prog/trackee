@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1A3A"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/img_alarm_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_alarm"
+        app:tint="#FF4A77" />
+
+    <TextView
+        android:id="@+id/tv_active_habit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_alarm_icon"
+        android:layout_marginTop="16dp"
+        android:text="Waktunya Bangun!"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_mission_instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_active_habit_title"
+        android:layout_marginTop="8dp"
+        android:text="MISI BEREAKSI: Arahkan kamera ke objek target"
+        android:textColor="#B0A6C7"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp" />
+
+    <Button
+        android:id="@+id/btn_capture"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:text="VERIFIKASI OBJEK"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:backgroundTint="#FF4A77"
+        app:cornerRadius="16dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_mission_instruction"
+        android:layout_above="@id/btn_capture"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="4dp"
+        android:backgroundTint="#000000">
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/view_finder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

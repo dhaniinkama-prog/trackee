@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_default">
+
+    <!-- Lingkaran Kanan Atas -->
+
+    <!-- Lingkaran Kiri Bawah -->
+
+    <!-- Character -->
+
+    <!-- Title -->
+
+    <ImageView
+        android:id="@+id/circleTopRight"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/circle_top"
+        android:translationX="40dp"
+        android:translationY="-40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/circleBottomLeft"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/circle_bottom"
+        android:translationX="-50dp"
+        android:translationY="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/characterImage"
+        android:layout_width="303dp"
+        android:layout_height="324dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="180dp"
+        android:src="@drawable/welcome_character"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.836" />
+
+    <!-- Subtitle -->
+
+    <!-- Button Continue -->
+    <TextView
+        android:id="@+id/welcomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="88dp"
+        android:text="Hai User"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcomeSubtitle"
+        android:layout_width="320dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="6dp"
+        android:text="Build good habits, stay kind to yourself, and enjoy every little progress — one smile at a time."
+        android:textColor="#444444"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcomeTitle" />
+
+    <Button
+        android:id="@+id/buttonContinue"
+        android:layout_width="303dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="144dp"
+        android:backgroundTint="#C2C9FF"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:cornerRadius="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

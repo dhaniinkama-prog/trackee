@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6FA"
+    android:padding="24dp">
+
+    <ImageButton
+        android:id="@+id/btnCloseMisi"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        app:tint="#A0A0A0"
+        android:contentDescription="Tutup Misi" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <FrameLayout
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginBottom="24dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_circle_outer" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="#F3EEFA"
+                    app:cardCornerRadius="50dp"
+                    app:cardElevation="0dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/ic_menu_camera"
+                        app:tint="#2E1A47" />
+                </androidx.cardview.widget.CardView>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_tag_misi"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="6dp"
+                android:text="🎯 MISI BARU TERSEDIA"
+                android:textColor="#2E1A47"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:letterSpacing="0.05"/>
+
+            <TextView
+                android:id="@+id/txtJudulMisi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Waktunya Minum Air Putih"
+                android:textAlignment="center"
+                android:textColor="#1F1F39"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#F3EEFA"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selesaikan kebiasaanmu dengan melakukan scan pada objek terkait menggunakan kamera smartphone kamu!"
+                android:textAlignment="center"
+                android:textColor="#78789D"
+                android:textSize="14sp"
+                android:lineSpacingMultiplier="1.2" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnSelesaiMisi"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#C5B4E3"
+        android:text="Buka Kamera Misi"
+        android:textAllCaps="false"
+        android:textColor="#2E1A47"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="16dp"
+        app:elevation="4dp" />
+
+</RelativeLayout>
